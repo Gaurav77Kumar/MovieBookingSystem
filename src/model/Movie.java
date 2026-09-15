@@ -1,6 +1,6 @@
 package src.model;
 
-final class Movie {
+public final class Movie {
     private final String title;
     private final int duration;
     private final String genre;
@@ -14,10 +14,21 @@ final class Movie {
     public String getTitle(){
         return title;
     }
+
     public int getDuration(){
         return duration;
     }
+
     public String getGenre(){
         return genre;
+    }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "title='" + title + '\'' +
+                ", duration=" + duration +
+                ", genre='" + genre + '\'' +
+                '}';
     }
 }
